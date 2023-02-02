@@ -27,6 +27,8 @@ screens = [
                 widget.WindowName(format='{name}', padding=50),
                 widget.KeyboardLayout(configured_keyboards=['us', 'ru'], update_interval=1),
                 widget.Sep(padding=10),
+                widget.Pomodoro(length_pomodori=30, color=False),
+                widget.Sep(padding=10),
                 widget.DF(visible_on_warn=False, format=" {r:.0f}%", partition="/home"),
                 widget.Sep(padding=10),
                 widget.CheckUpdates(distro='Arch', display_format='UPDATES  {updates}',
